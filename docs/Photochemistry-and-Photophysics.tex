@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,12 +75,15 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Photochemistry and Photophysics Workshops}
 \author{Fiona Dickinson}
-\date{2020-09-29}
+\date{2020-09-30}
 
 \begin{document}
 \maketitle
@@ -107,29 +110,48 @@ This is the answers for workshop questions, the answers have been prepared from 
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Week one answers finished 300920
 The initial commit of this book is dated 29th September 2020.
 
 \hypertarget{ch:Workshop1}{%
-\chapter{Workshop Questions for Week 1}\label{ch:Workshop1}}
+\chapter{Workshop Answers for Week 1}\label{ch:Workshop1}}
 
 \hypertarget{sec:BeerLambert}{%
 \section{Short mathematical question - Beer Lambert law}\label{sec:BeerLambert}}
 
-\begin{itemize}
-\tightlist
-\item
-  How far can monochromatic 489 nm light travel through a 0.100 M solution of fluorescein with an extinction coefficient at 489 nm of 92000 M\textsuperscript{−1} cm\textsuperscript{−1} before 90 \% of it is absorbed?
-  \emph{(I will use MCQs and UniDoodle to ask this in class)}
-\end{itemize}
+- \emph{How far can monochromatic 489 nm light travel through a 0.100 M solution of fluorescein with an extinction coefficient at 489 nm of 92000 M\textsuperscript{−1} cm\textsuperscript{−1} before 90 \% of it is absorbed?}
+
+If 90\% of the incident light is being absorbed then 10\% of the light is transmitted\ldots{}
+
+The Beer-Lambert law is (Equation \eqref{eq:BeerLambert}):
+
+\begin{equation}
+\log{\frac{I}{I_0}}=-\varepsilon c l
+\label{eq:BeerLambert}
+\end{equation}
+
+rearranging this:
+
+\begin{equation*}
+l = \frac{\log{\frac{I_0}{I}}}{\varepsilon c}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{\log{\frac{100 \%}{10 \%}}}{92000 \textrm{ M}^{-1} \textrm{ cm}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{1}{9200000 \textrm{ M}^{-1} \textrm{ m}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = 1.0 \textrm{ μm}
+\end{equation*}
 
 \hypertarget{sec:MolarExtinction}{%
 \section{Short conceptual question - molar extinction coefficient}\label{sec:MolarExtinction}}
 
-\begin{itemize}
-\tightlist
-\item
-  Modify the molecule in figure \ref{fig:bpy} to increase the molar extinction coefficient (do not worry about what may happen to wavelength).
-\end{itemize}
+\emph{- Modify the molecule in figure \ref{fig:bpy} to increase the molar extinction coefficient (do not worry about what may happen to wavelength).}
 
 \begin{figure}
 
@@ -140,16 +162,23 @@ The initial commit of this book is dated 29th September 2020.
 \caption{The structure of bipyridine (also known as bpy).}\label{fig:bpy}
 \end{figure}
 
-\emph{(I will use UniDoodle's drawing feature to ask this in class)}
+If a molecule is rigid the difference between the ground and excited state structure is smaller and this usually leads to a higher molar extinction coefficient, so any structural changes which increase this rigidity will likely lead to a higher molar extinction coefficient.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/structurealts} 
+
+}
+
+\caption{Two possible modifications of bpy, the stilbene derivative on teh left has a very different ground and excited state structure due to the possible rotations around the two conjucated single bonds, the phenantroline modificaiton on the right does not allow much deviation in structure and so the excited state is only bent as the bond order is reduced leading to a larger overlap integral.}\label{fig:bpyalts}
+\end{figure}
+
+Excitation of an electron from a bonding or non-bonding orbital into an anti-bonding orbital reduces the bond order, and will `kink' aromatic systems.
 
 \hypertarget{sec:intensity}{%
 \section{Short conceptual question - intensity of colour}\label{sec:intensity}}
 
-\begin{itemize}
-\tightlist
-\item
-  What factors influence the `intensity of colour' of the following solutions?
-\end{itemize}
+\emph{- What factors influence the `intensity of colour' of the following solutions?}
 
 \begin{figure}
 
@@ -166,21 +195,36 @@ The initial commit of this book is dated 29th September 2020.
 
 }
 
-\caption{1 mM solutions of the organic dye methylene blue (right), potassium permanganate (centre) and copper hexa-aqua (left).}\label{fig:molarextsolutions}
+\caption{1 mM solutions of the organic dye methylene blue (right), potassium permanganate (centre) and copper (hexa-aqua) sulfate (left).}\label{fig:molarextsolutions}
 \end{figure}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+CuSO\textsubscript{4} in solution forms the hexa aqua complex listed in figure \ref{fig:molarextstructures}. This is a centrosymmetric molecule which therefore runs foul of the Laporte selection rule which says that ``allowed transitions in centrosymmetric molecules must involve a change in parity''. So either g → u or u → g are allowed, and g → g and u → u are forbidden.
+
+You will not be expected to work out symetry types for orbitals but can `back justify' to explain with this.
+
+These symmetry labels appear on the energy level diagram for CU\textsuperscript{2+} (figure \ref{fig:Cu}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/CuIIenergylevels} 
+
+}
+
+\caption{The splitting of the d-orbitals in octahedral Cu2+, the transition is between the HOMO t2g level and the PUMO eg level. The subscript g on each of these orbitals is a symmetry label indicating there is no change or parity and so the transition is Laporte forbidden.}\label{fig:Cu}
+\end{figure}
+
+Both of the split energy levels are gerade (g) and so there is no change of parity for the transition from t\textsubscript{2g} to e\textsubscript{g}, therefore the transition is selection rule forbidden and has a low molar extinction coefficient. The `breaking of symmetry' by possible rotamers of the water ligands mean this value is higher than for the gas phase atomic molar absorption coefficient. The maximum molar extinction coefficient of copper sulfate solutions is around 20 M\textsuperscript{-1} cm\textsuperscript{-1}.
+
+The permanganate (MnO\textsubscript{4}\textsuperscript{-}) is a ligand to metal charge transfer transition, since excitation of an electron effectively moves an electron from one of the oxygen ligands to the manganese `empty' metal centre there is no limitation from the spin selection rule and the complex is not subject to the Laporte selection rule. This leads to moderate to `high' molar extinction coefficients. The maximum molar extinction coefficient of potassium permanganate solutions is around 1800 M\textsuperscript{-1} cm\textsuperscript{-1}.
+
+The final molecule is the synthetic dye methylene blue, this is not centrosymmetric and so is not subject to the Laporte selectrion rule, further the structure with fused aromatic rings and a large amount of conjugation is fairly rigid and so there is a large overlap of the wavefunctions of the ground and excited state. The maximum molar extinction coefficient of methylene blue solutions is around 75000 M\textsuperscript{-1} cm\textsuperscript{-1}.
 
 \hypertarget{sec:linewidth}{%
 \section{Short conceptual question - line width}\label{sec:linewidth}}
 
-\begin{itemize}
-\tightlist
-\item
-  Why are some spectra very broad (figure \ref{fig:molecular}), whereas others have sharp peaks (figure \ref{fig:atomic})?
-\end{itemize}
+- \emph{Why are some spectra very broad (figure \ref{fig:molecular}), whereas others have sharp peaks (figure \ref{fig:atomic})?}
 
-You will need to look at the x-scale to truley note the difference in the width of these emission spectra.
+\emph{You will need to look at the x-scale to truley note the difference in the width of these emission spectra.}
 
 \begin{figure}
 
@@ -188,7 +232,7 @@ You will need to look at the x-scale to truley note the difference in the width 
 
 }
 
-\caption{The emission spectrum of rhodamine 6G}\label{fig:molecular}
+\caption{The fluorescence emission spectrum of rhodamine 6G in methanol}\label{fig:molecular}
 \end{figure}
 
 \begin{figure}
@@ -197,10 +241,25 @@ You will need to look at the x-scale to truley note the difference in the width 
 
 }
 
-\caption{The emission spectrum of Sn(II)}\label{fig:atomic}
+\caption{The emission spectrum of Sn(II) from ICP-OES}\label{fig:atomic}
 \end{figure}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+We are looking at two very different spectra here, first off we have an atomic transition and a molecular transition. Secondly one is solvated, the other in the gas (or more acurately plasma) phase. Both of these factors are important\ldots{}
+
+When we have a transition for either absorption or emission then on an atomic level those energy levels are incredibly well defined, this leads to the energy required to promote an electron between these levels to be equally well defined.
+
+As soon as we solvate this the energy of the occupied (HOMO) is softened as intermolecular interactions will stabilise this level to different amounts, solvation may also allow previously absolutely parity forbidden processes to occur.
+
+The molecular spectrum is much broader because each of the possible rotamers, vibratamers and isomers has a slightly different energy, the myriad possible energies are expanded still by solvation and tempeature effects. The more possible structural isomers and rotamers the `softer' any defining features in the spectrum. For example if we compare the rhodamine spectum (figure \ref{fig:molecular}) to that of antracene (figure \ref{fig:anthracene}) we can see that there is more `fine structure' in the anthracene spectrum, this is because of the smaller possible number of structural variations, there are no possible rotamers and so transitions are more defined.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/anthracene} 
+
+}
+
+\caption{The absorption and emission spectra of anthracene indicating fine structure in the spectrum}\label{fig:anthracene}
+\end{figure}
 
 \hypertarget{sec:solvationabs}{%
 \section{Short conceptual question - the effect of solvation on absorbance}\label{sec:solvationabs}}
@@ -214,20 +273,27 @@ You will need to look at the x-scale to truley note the difference in the width 
 \caption{Ethidium bromide dissolved in from right; water(orange), methanol, ethanol, propanol and butanol(purple)}\label{fig:ethidium}
 \end{figure}
 
-\begin{itemize}
-\tightlist
-\item
-  Why does the observed colour of ethidium bromide depend upon the solvent (figure \ref{fig:ethidium}))?
-\end{itemize}
+- \emph{Why does the observed colour of ethidium bromide depend upon the solvent (figure \ref{fig:ethidium}))?}
 
-Think about the effect of solvation on the energy levels and why those energy levels matter! Remember that if light is transmitted through a solution that is the colour we observe\ldots{}
+\emph{Think about the effect of solvation on the energy levels and why those energy levels matter! Remember that if light is transmitted through a solution that is the colour we observe\ldots{}}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+This is in essence answering the same question as in question \ref{sec:linewidth}, solvation affects the energy levels of occupied orbitals.WIthout going into any more detail than essential the different solvents stabilise the HOMO of ethidium bromide different amounts - this is likely due to different hydrogen bonding of the alchols. The more stabilised the ground state the bigger the energy gap leading to a blue shift in the absorption spectra. The orange solution is absorbing blue light (λ\textsubscript{max} = 480 nm) and the purple solution absorbing orange (λ\textsubscript{max} = 550 nm) indicating the energy gap of the aquous solution is larger and therefore the solvent stabilisation is biggest.
+
+It is worth noting that the energy of `empty' orbitals is unaffected and so the energy of the LUMO is unchanged (figure \ref{fig:solvato}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/solvatochromism} 
+
+}
+
+\caption{Solvation effects the energy level of the HOMO, but the unoccupied LUMO always has the same energy, conseqently in different solvents the energy gap varies.}\label{fig:solvato}
+\end{figure}
 
 \hypertarget{sec:Azobenzene}{%
 \section{Extended question - Azobenzene}\label{sec:Azobenzene}}
 
-Azobenzene undergoes the following cis-trans isomerisation, the isomerisation occurs in the ps timescale.
+\emph{Azobenzene undergoes the following cis-trans isomerisation, the isomerisation occurs in the ps timescale.}
 
 \begin{figure}
 
@@ -238,21 +304,15 @@ Azobenzene undergoes the following cis-trans isomerisation, the isomerisation oc
 \caption{The cis-trans isomerisation of azobenzene}\label{fig:cistransazobenzene}
 \end{figure}
 
-\begin{itemize}
-\item
-  Why would you expect the absorption spectrum of each isomer to be different?
-\item
-  Suggest why the trans conformation is more stable than the cis isomer.
-\item
-  Use the following data to predict the proportion of each isomer under 360 nm excitation.
-\end{itemize}
+- \emph{Why would you expect the absorption spectrum of each isomer to be different?}
+
+- \emph{Suggest why the trans conformation is more stable than the cis isomer.}
+
+- \emph{Use the following data to predict the proportion of each isomer under 360 nm excitation.}
+
+\emph{Table: \label{tab:azobenzeneabs} The molar extinction coefficient of the two isomers of azobenzene.}
 
 \begin{longtable}[]{@{}lll@{}}
-\caption{\label{tab:azobenzeneabs} The molar extinction coefficient of the two isomers of azobenzene.}\tabularnewline
-\toprule
-& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1}\tabularnewline
-\midrule
-\endfirsthead
 \toprule
 & ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1}\tabularnewline
 \midrule
@@ -262,12 +322,9 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{itemize}
-\item
-  Would there be more or less trans azobenzene at 460 nm? Justify your answer.
-\item
-  It has been suggested the 360 nm absorption is an S\textsubscript{0} → S\textsubscript{2} absorption, and the 460 nm band is an S\textsubscript{0} → S\textsubscript{1} absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 \& 295 nm respectively.
-\end{itemize}
+- \emph{Would there be more or less trans azobenzene at 460 nm? Justify your answer.}
+
+- \emph{It has been suggested the 360 nm absorption is an S\textsubscript{0} → S\textsubscript{2} absorption, and the 460 nm band is an S\textsubscript{0} → S\textsubscript{1} absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 \& 295 nm respectively.}
 
 \begin{figure}
 
@@ -278,7 +335,7 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \caption{The  structure of stilbene}\label{fig:stilbene}
 \end{figure}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat. I don't expect to finish this question but hope to get far enough through that a good attempt can be made at home after the LOIL)}
+I'm leaving you hanging on this one we will discuss it again next week.
 
   \bibliography{book.bib,packages.bib}
 
