@@ -130,7 +130,11 @@ knitr::include_graphics("images/cistransazobenzene.png")
 
 <span style="color: darkcyan;"> - *Why would you expect the absorption spectrum of each isomer to be different?* 
 
+Trans azobenzene is centrosymmetric and so is subject to the Laporte selection rule, cis azobenzene is non-centrosymmetric and so it is not parity forbidden. Consequently the HOMO-LUMO transition which is allowed for the cis is forbidden for the trans and so the absorbance spectra is different.
+
 <span style="color: darkcyan;"> - *Suggest why the trans conformation is more stable than the cis isomer.*
+
+Steric hinderance will mean that the cis-isomer is not planar, if it isn't planar it isn't fully conjugated, and if it isn't fully conjugated it isn't as stable. There is no steric hinderance in the trans isomer.
 
  <span style="color: darkcyan;">- *Use the following data to predict the proportion of each isomer under 360 nm excitation.* 
 
@@ -141,13 +145,28 @@ knitr::include_graphics("images/cistransazobenzene.png")
 | trans-azobenzene | 22000 | 4500 |
 | cis-azobenzene |2100 | 5500 |
  
+For the photostationary state the absorbance of the two isomers will be the same.
+
+The excited state for both molecules will be the same, and the probability of the excited state decaying into any given  isomer is the same.
+
+So if $A =\varepsilon cl$ and $A_{trans}=A_{cis}$ then at 360 nm:
+
+\begin{equation*}
+\varepsilon_{trans} c_{trans} = \varepsilon_{cis} c_{cis}
+\end{equation*}
+
+$c_{trans}= 0.095 c_{cis}$
+
 <span style="color: darkcyan;"> - *Would there be more or less trans azobenzene at 460 nm? Justify your answer.*
 
+There would be more trans at the photostationary state when excited at 460 nm, this is because the relative ration of molar extinction coefficients favors formation of more of the trans isomer.
 
 <span style="color: darkcyan;"> - *It has been suggested the 360 nm absorption is an S~0~ → S~2~ absorption, and the 460 nm band is an S~0~ → S~1~ absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 & 295 nm respectively.*
 
 ```{r echo=FALSE, stilbene, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The  structure of stilbene'}
 knitr::include_graphics("images/stilbene.png")
 ```
+
+Azobenzene has $n$, $\pi$ and $\pi^*$ orbitals whereas stilbene only has $\pi$ and $\pi^*$ orbitals. Given the different orbital types available in azobenzene the expectation that the transitions will have a wider energy spacing than in stilbene where we just have the bonding and antibonding $pi$ set, and so we would expect these energy levels to be more closely spaced.
 
 I'm leaving you hanging on this one we will discuss it again next week.

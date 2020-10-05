@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "157998883",
+    "hash" : "0",
     "id" : "8220ECB1",
-    "lastKnownWriteTime" : 1601505021,
-    "last_content_update" : 1601505021972,
+    "lastKnownWriteTime" : 1601934165,
+    "last_content_update" : 1601934165693,
     "path" : "~/Library/Mobile Documents/com~apple~CloudDocs/GitHub/PhotochemistryWorkshopAnswers/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
-        "cursorPosition" : "25,32",
-        "scrollLine" : "16"
+        "cursorPosition" : "25,50",
+        "scrollLine" : "18"
     },
     "relative_order" : 2,
     "source_on_save" : false,
