@@ -83,7 +83,7 @@
 
 \title{Photochemistry and Photophysics Workshops}
 \author{Fiona Dickinson}
-\date{2020-09-30}
+\date{2020-10-06}
 
 \begin{document}
 \maketitle
@@ -110,6 +110,8 @@ This is the answers for workshop questions, the answers have been prepared from 
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Week two answers finished 061020
+Week one answer for final question finished 051020
 Week one answers finished 300920
 The initial commit of this book is dated 29th September 2020.
 
@@ -306,7 +308,11 @@ It is worth noting that the energy of `empty' orbitals is unaffected and so the 
 
 - \emph{Why would you expect the absorption spectrum of each isomer to be different?}
 
+Trans azobenzene is centrosymmetric and so is subject to the Laporte selection rule, cis azobenzene is non-centrosymmetric and so it is not parity forbidden. Consequently the HOMO-LUMO transition which is allowed for the cis is forbidden for the trans and so the absorbance spectra is different.
+
 - \emph{Suggest why the trans conformation is more stable than the cis isomer.}
+
+Steric hinderance will mean that the cis-isomer is not planar, if it isn't planar it isn't fully conjugated, and if it isn't fully conjugated it isn't as stable. There is no steric hinderance in the trans isomer.
 
 - \emph{Use the following data to predict the proportion of each isomer under 360 nm excitation.}
 
@@ -322,7 +328,21 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \bottomrule
 \end{longtable}
 
+For the photostationary state the absorbance of the two isomers will be the same.
+
+The excited state for both molecules will be the same, and the probability of the excited state decaying into any given isomer is the same.
+
+So if \(A =\varepsilon cl\) and \(A_{trans}=A_{cis}\) then at 360 nm:
+
+\begin{equation*}
+\varepsilon_{trans} c_{trans} = \varepsilon_{cis} c_{cis}
+\end{equation*}
+
+\(c_{trans}= 0.095 c_{cis}\)
+
 - \emph{Would there be more or less trans azobenzene at 460 nm? Justify your answer.}
+
+There would be more trans at the photostationary state when excited at 460 nm, this is because the relative ration of molar extinction coefficients favors formation of more of the trans isomer.
 
 - \emph{It has been suggested the 360 nm absorption is an S\textsubscript{0} → S\textsubscript{2} absorption, and the 460 nm band is an S\textsubscript{0} → S\textsubscript{1} absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 \& 295 nm respectively.}
 
@@ -335,7 +355,281 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \caption{The  structure of stilbene}\label{fig:stilbene}
 \end{figure}
 
+Azobenzene has \(n\), \(\pi\) and \(\pi^*\) orbitals whereas stilbene only has \(\pi\) and \(\pi^*\) orbitals. Given the different orbital types available in azobenzene the expectation that the transitions will have a wider energy spacing than in stilbene where we just have the bonding and antibonding \(pi\) set, and so we would expect these energy levels to be more closely spaced.
+
 I'm leaving you hanging on this one we will discuss it again next week.
+
+\hypertarget{ch:Workshop2}{%
+\chapter{Workshop Answers for Week 2}\label{ch:Workshop2}}
+
+\hypertarget{sec:YieldLifetime}{%
+\section{Short mathematical question - Quantum Yield and lifetime}\label{sec:YieldLifetime}}
+
+\emph{The quantum yield and lifetime of a dye were measured to be 0.43 \& 2.6 ns respectively. What is the natural lifetime?}
+
+The fluorescence quantum yield (equation \eqref{eq:lifetimefluor} and fluorescence lifetime (equation \eqref{eq:lifetimefluor}) are related to the rate constants for the different decay processes.
+
+\begin{equation}
+\phi_f = \frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\label{eq:QYfluor}
+\end{equation}
+
+\begin{equation}
+\tau_f = \frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\label{eq:lifetimefluor}
+\end{equation}
+
+The natural lifetime is the lifetime when the only decay pathway is fluorescence emission (equation \eqref{eq:natural}).
+
+\begin{equation}
+\tau_f^0 = \frac{1}{k_f^0}
+\label{eq:natural}
+\end{equation}
+
+Combining equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}:
+
+\begin{equation*}
+\frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
+\end{equation*}
+
+Consequently \(\tau_f^0 = \frac{\tau_f}{\phi_f}=\frac{2.6}{0.43}= 6.0\) ns
+
+\hypertarget{sec:otherprocesses}{%
+\section{Short conceptual question - Effect of other processes}\label{sec:otherprocesses}}
+
+\emph{For a given value of τ\textsubscript{0} what happens to the lifetime and quantum yield as k\textsubscript{IC} and k\textsubscript{ISC} increases?}
+
+If \(k_f^0\) is fixed (which it is for a given chromophore) then as we adjust the other rate constants in equation \eqref{eq:lifetimefluor} the emission lifetime (the time it takes for the intensity to reduce to 1/e of the initial intensity) decreases, as shown in figure \ref{fig:rateslifetime}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/rateslifetime} 
+
+}
+
+\caption{The variation of the emission lifetime (the time it takes to decay to 1/e of the initial concentration, for a constant rate of fluorescence emission but increasing rates of non-radiative decay.}\label{fig:rateslifetime}
+\end{figure}
+
+\hypertarget{sec:structure}{%
+\section{Conceptual question - Effect of structure}\label{sec:structure}}
+
+\emph{Fluorescein (figure \ref{fig:fluorescein}) in basic aqueous solution has a quantum yield of fluorescence, Φ\textsubscript{f}, of 0.95, and fluorescence lifetime, τ\textsubscript{f}, of 4.1 ns.}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/fluorescein} 
+
+}
+
+\caption{The structure of the fluorescent molecule fluorescein}\label{fig:fluorescein}
+\end{figure}
+
+\emph{Suggest why the fluorescence quantum yield in this system is so high.}
+
+The only things that affect the quantum yield and lifetime (equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}) are the different rate constants involved. The quantum yield is a measure of the proportion of excited states which decay by each pathway.
+
+Therefore if the quantum yield of fluorescence is near unity then neither the rate of intersystem crossing or internal conversion is large. Intersystem crossing may occur due to the change in orbital type offered, but given the lack of heavy atoms this rate is unlikely to be high and will probably be a negligable proprortion given the high rates of other processes.
+
+The rate of intersystem crossing is more efficient for rotations than vibrations (due to the closwer spacing of rotational energy levels), therefore if rotations can occur the rate of internal conversion tends to be quite high. In this case there is only one likely bond that could rotate to loose the excited state of the system. This is the single bond linking the two ring systems. Rotation around this bond is severly inhibited though due to the presence of the acid group which restricts rotation.
+
+Please note that it is rotations around bonds that cross the conjugation within the molecule that allow for the most efficient energy loss.
+
+\hypertarget{conceptual-question---lack-of-symmetry-in-spectra.}{%
+\section{Conceptual question - lack of symmetry in spectra.}\label{conceptual-question---lack-of-symmetry-in-spectra.}}
+
+\emph{The absorption and emission spectrum of fluorescein is shown in figure (\ref{fig:fluoresceinspec}).}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/fluoresceinspec} 
+
+}
+
+\caption{The absorption (solid) and emission (dashed) spectrum of fluorescein in basic ethanol.}\label{fig:fluoresceinspec}
+\end{figure}
+
+\emph{Why are the absorption bands between 200 -- 350 nm not reflected in the emission spectrum?}
+
+Kasha's rule states \emph{"An excited state always emits from the lowest energy level of that spin multiplicity state.} Consequently we can excite into any available orbital, but the excited state will rapidly decay into the lowest energy level of that multiplicity. So although we are exciting from S\textsubscript{0} into S\textsubscript{1}, S\textsubscript{2}, S\textsubscript{3}\ldots{} any excited state will rapidly decay by internal conversion down to the S\textsubscript{1} excited state and all emission will occur from this state.
+
+Kasha's rule is a consequence of the energy gap law which I alluded to when talking about the special case of azulene, but this will be covered in a video specifically talking about the energy gap law.
+
+\hypertarget{sec:stokes}{%
+\section{Conceptual question - Stokes' shift}\label{sec:stokes}}
+
+\emph{The inorganic dye {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} has a measured lifetime in water of 580 ns and a natural lifetime of 13.8 µs. The spectrum is shown in figure \ref{fig:Rubpyspec}. What is the origin of the large Stokes' shift in this system?}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/Rubpy3spectra} 
+
+}
+
+\caption{The absorption (black) and emission (red) spectrum of ruthenium tris bypyridine in water.}\label{fig:Rubpyspec}
+\end{figure}
+
+Firstly we need to separate two things - the first is just the origin of the Stokes' shift due to the transition of an electron occuring very quickly leaving an optimised state to occupy an unoptimised state, which later relaxes. A typical Stokes' shift is \textasciitilde20 nm, the Stokes' shift in this example is more than 150 nm\ldots{} why?
+
+If we consider the system that we have at hand, in this case {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} we can note the HOMO-LUMO transition is an MLCT. This has a large difference in structure of the HOMO \& LUMO with a redistribution of charge which will also have a large effect on the arrangement of the solvent shell. Given this large difference in optimised structure there would be a large shift.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/RubpyMLCT} 
+
+}
+
+\caption{The HOMO (left) and LUMO (right) of ruthenium (II) tris bipyridine clearly showing the MLCT nature of the transition.}\label{fig:RubpyMLCT}
+\end{figure}
+
+However this isn't the only factor, the natural lifetime of 13.8 µs would indicate that the emission transition is phosphorescence, this spin forbidden transition has electrons alligned in parallel which is lower than the corresponding singlet state. So after excitation there is a change in multiplicity of the excited state, this lowers the energy of the system further moving the \(\lambda _{max}\) of emission to lower energy (longer wavelength).
+
+Data from Shi \emph{et al.}, Synthesis and characterization of phosphorescent two coordinate copper(I) complexes bearing diamidocarbene ligands. \href{https://doi.org/10.1039/C6DT04016K}{Dalton Trans., 2017,46, 745-752.}
+
+\hypertarget{sec:binding}{%
+\section{Conceptual question - the effect of binding on emission}\label{sec:binding}}
+
+\emph{The asymmetric cyanine dye YO-Pro-1 is a DNA stain because it has a large increase on fluorescence emission when binding to DNA. The lifetime in free solution is around 2 ps and when bound to DNA is 2.4 ns. What is the structural origin of the large increase of emission upon binding?}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/YODNAans} 
+
+}
+
+\caption{The emission spectrum of the choromophore YO-Pro-1 when free in aqueous solution (blue) and when bound to DNA (pink), the structure of the chromophore indicating a route of rotation relaxation is indicated.}\label{fig:YODNA}
+\end{figure}
+
+The chromophore YO-Pro-1 has a methine bridge between the two halves of the chromophore, this offers efficient loss of the excited state \emph{via} internal conversion (see question \ref{sec:structure}. As noted earlier free rotation around a bond which cuts across the conjugation is particularly efficient in deactivating an excited state.
+
+If this pathway is inhibited by binding to the DNA (the dye intercalates between the base pairs but any dye DNA interaction would inhibit this mechanism of excited state decay) then the fluorescence lifetime will increase (equation \eqref{eq:lifetimefluor}).
+
+\hypertarget{extended-question---properties-of-ethidium-bromide-example-exam-question}{%
+\section{Extended question - Properties of Ethidium Bromide (Example Exam Question)}\label{extended-question---properties-of-ethidium-bromide-example-exam-question}}
+
+\emph{Ethidium bromide (EB, figure \ref{fig:ethidiumstructure} is used as a DNA stain, which is essentially non-fluorescent in aqueous solution, but shows a strong enhancement of emission upon binding to double stranded DNA (which has a negatively charged backbone).}
+
+\emph{Emission is almost exclusively from the singlet excited state, but a triplet state has been shown to exist, which emits with a low quantum yield (Φ\textsubscript{P} = 0.00006).}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/ethidiumstructure} 
+
+}
+
+\caption{The structure of the cationic ethidium bromide chromophore.}\label{fig:ethidiumstructure}
+\end{figure}
+
+\emph{- Sketch a Jablonski diagram for the processes you know to occur.}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Jablonski} 
+
+}
+
+\caption{A Jablonski diagram indicating the allowed transitions within the system, absorbance , internal conversion, intersystem crossing, fluorescence and phosphorescecne.}\label{fig:Jablonski}
+\end{figure}
+
+If phosphorescecne occurs there must be some intersystem crossing in both directions.
+
+\emph{- The molar extinction coefficient, ε, of EB has be measured to be 78500 M\textsuperscript{−1} cm\textsuperscript{−1}. What factors contribute to EB having such a high extinction coefficient?}
+
+There is a rigid structure indicating a similar ground and excited state strucutre, which would lead to a good overlap integrals between the HOMO and LUMO. THe molar extinction coefficient is a measure of this overlap integral.
+
+\emph{The following spectra, lifetimes and quantum yield have been measured for EB in different free solution and DNA systems:}
+
+Table: \label{tab:ethidiumlifetime} The lifetimes and quantum yields of ethidium bromide in aquous solution and when bound to DNA in protiated and deuterated systems.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+& τ / ns & Φ\textsubscript{f}\tabularnewline
+\midrule
+\endhead
+H\textsubscript{2}O (no DNA) & 1.6 & 0.012\tabularnewline
+D\textsubscript{2}O (no DNA) & 6.3 &\tabularnewline
+DNA & 28.3 & 0.220\tabularnewline
+DNA (deuterated) & 38.4 &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/ethidiumspectra} 
+
+}
+
+\caption{The absorption (black) and emission (pink) spectrum of ethidium bromide when bound to DNA.}\label{fig:ethidiumspectra}
+\end{figure}
+
+\emph{- What factors likely lead to an enhancement of fluorescence quantum yield upon binding to DNA?}
+
+The chromophore single bond between the two halves of the chromophore, this offers efficient loss of the excited state \emph{via} internal conversion (see question \ref{sec:structure}. As noted earlier free rotation around a bond which cuts across the conjugation is particularly efficient in deactivating an excited state.
+
+If this pathway is inhibited by binding to the DNA (the dye intercalates between the base pairs but any dye DNA interaction would inhibit this mechanism of excited state decay) then the fluorescence lifetime will increase (equation \eqref{eq:lifetimefluor}).
+
+\emph{- Show that the natural lifetime of EB is 129 ns.}
+
+\begin{equation*}
+\phi_f = \frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\end{equation*}
+
+\begin{equation*}
+\tau_f = \frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\end{equation*}
+
+The natural lifetime is the lifetime when the only decay pathway is fluorescence emission (equation \eqref{eq:natural}).
+
+\begin{equation*}
+\tau_f^0 = \frac{1}{k_f^0}
+\end{equation*}
+
+Combining equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}:
+
+\begin{equation*}
+\frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
+\end{equation*}
+
+Consequently \(\tau_f^0 = \frac{\tau_f}{\phi_f}=\frac{1.6}{0.012}= 129\) ns
+
+\emph{- What is the origin of the large Stoke's shift (λ\textasciitilde max ex\textasciitilde{} = 520 nm, λ\textasciitilde max em\textasciitilde{} = 608 nm)}
+
+We are told the transition is fluorescence, but it has a very long natural lifetime. This long lifetime would indicate that despite the transition being selection rule allowed there is a structural explanation for the inefficiency of this process.
+
+This would indicate that there is now a poor overlap integral indcating a poor overlap of the excited state and ground state structures, or there is a large difference in the structures of the excited and ground states.
+
+This large difference in structure would be accounted for in the Stokes' shift - a large deviation in structure would lead to a larger energy loss upon the optimisation of the excited state.
+
+\emph{- What transitions are responsible for the absorption features in the:}
+\emph{400-600 nm range
+}200-350 nm range
+
+The molecule has hetero atoms and so there will be both \(n-\pi*\) and \(\pi-\pi*\) transitions, the \(n-\pi*\) transitions will occur at lower energy (higher wavelength) and be the HOMO-LUMO transition.
+
+\emph{- Why are the features in the 200-350 nm range not replicated in the emission spectrum?}
+
+Kasha's rule states \emph{"An excited state always emits from the lowest energy level of that spin multiplicity state.} Consequently we can excite into any available orbital, but the excited state will rapidly decay into the lowest energy level of that multiplicity. So although we are exciting from S\textsubscript{0} into S\textsubscript{1}, S\textsubscript{2}, S\textsubscript{3}\ldots{} any excited state will rapidly decay by internal conversion down to the S\textsubscript{1} excited state and all emission will occur from this state.
+
+\emph{- Why does deuterating the solvent (or DNA) effect the lifetime of the excited state?}
+
+Ultimately because it affects the rates of internal conversion, and so the lifetime is changed as described in equation @\ref(eq:lifetimefluor). We will learn more as to why when we cover the energy gap law.
+
+\emph{- What effect would freezing the samples have on the lifetime, fluorescence quantum yield \& phosphorescence quantum yield.}
+
+You would expect the emission lifetime and quantum yield to increase on freezing (as described in equation @\ref(eq:lifetimefluor)) as the efficiency (and therefore rate) of internal conversion mechanisms (particularly rotational relaxation) would be dramatically reduced in solid systems.
+
+\emph{A study of the thermodynamics of the dye DNA system measured the binding constant of EB with DNA to be 1.05 × 10\textsuperscript{6}.}
+
+\emph{- Why is the measured quantum yield for a system containing 2 µM EB and 20 mM DNA only 0.18?}
+
+This will be due to there being two states - one where the chromophore is bound, one where it is not. It is an equilibrium so not all dye will be bound to DNA. When not bound there is no fluorescence enhancement. The quantum yield we see is in fact a weighted average between the two states.
+
+This is a problem solving question and any reasonable attempt would have been given credit. It is demonstrating an ability to think about data and the problem in a scientific manner.
+
+\emph{- Why would increasing the ionic strength of the solution, increase the fluorescence intensity of EB in solution with DNA?}
+
+This would push the equilibrium to form the dye:DNA complex increasing binding, as the binding increases the proportion of molecules displaying the higher quantum yield increases and the overall emission intensity of the sample increases.
+
+This is a problem solving question and any reasonable attempt would have been given credit. It is demonstrating an ability to think about data and the problem in a scientific manner.
 
   \bibliography{book.bib,packages.bib}
 
