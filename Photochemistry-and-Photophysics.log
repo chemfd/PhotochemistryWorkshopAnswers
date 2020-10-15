@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.8.26)  14 OCT 2020 16:44
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.8.26)  15 OCT 2020 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1063,7 +1063,7 @@ File: images/bpy.png Graphic file (type bmp)
 File: images/structurealts.png Graphic file (type bmp)
 <images/structurealts.png>
 
-Underfull \hbox (badness 1038) in paragraph at lines 178--178
+Underfull \hbox (badness 1038) in paragraph at lines 179--179
 []\TU/lmr/bx/n/14.4 Short conceptual question - intensity of
  []
 
@@ -1144,10 +1144,10 @@ LE EXAM QUESTION) \TU/lmr/m/n/10 23
 
 [23] [24]
 
-LaTeX Warning: Reference `(' on page 25 undefined on input line 611.
+LaTeX Warning: Reference `(' on page 25 undefined on input line 612.
 
 
-LaTeX Warning: Reference `(' on page 25 undefined on input line 615.
+LaTeX Warning: Reference `(' on page 25 undefined on input line 616.
 
 
 Overfull \hbox (146.77124pt too wide) has occurred while \output is active
@@ -1158,17 +1158,17 @@ LE EXAM QUESTION) \TU/lmr/m/n/10 25
 [25] [26]
 Chapter 3.
 
-Underfull \hbox (badness 2626) in paragraph at lines 635--635
+Underfull \hbox (badness 2626) in paragraph at lines 636--636
 []\TU/lmr/bx/n/14.4 Short conceptual question - Electronic-
  []
 
 File: images/overlap.png Graphic file (type bmp)
 <images/overlap.png>
-File: images/intconvoverlap2.png Graphic file (type bmp)
-<images/intconvoverlap2.png>
 [27
 
 ]
+File: images/intconvoverlap2.png Graphic file (type bmp)
+<images/intconvoverlap2.png>
 File: Images/stilbeneindene.png Graphic file (type bmp)
 <Images/stilbeneindene.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
@@ -1180,26 +1180,25 @@ m/n/10 29
  []
 
 [29] [30]
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-
-Overfull \hbox (371.69353pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 3.9.  SHORT CONCEPTUAL QUESTION - THE EFFECT OF ABSORBANCE AND 
-EMISSION WAVELENGTHS ON THE QUANTUM YIELD OF EMISSION \TU/lmr/m/n/10 31
+Overfull \hbox (70.49232pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.6.  SHORT CONCEPTUAL QUESTION - AFFECT OF DEUTERATION OF SOLV
+ENTS. \TU/lmr/m/n/10 31
  []
 
 [31]
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 No file Photochemistry-and-Photophysics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 827.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 861.
 [32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 827.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 861.
 (./Photochemistry-and-Photophysics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 827.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 827.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 861.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 861.
 
 LaTeX Warning: There were undefined references.
 
@@ -1207,10 +1206,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  27656 strings out of 492916
  504849 string characters out of 6133345
- 727780 words of memory out of 5000000
+ 726780 words of memory out of 5000000
  31419 multiletter control sequences out of 15000+600000
  538740 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,7n,115p,830b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,7n,115p,830b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Photochemistry-and-Photophysics.pdf (32 pages).

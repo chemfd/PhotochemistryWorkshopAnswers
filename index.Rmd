@@ -23,6 +23,7 @@ This is the answers for workshop questions, the answers have been prepared from 
 
 ## Version history {-}
 
+Week three answers finished 151020
 Week two answers finished 061020
 Week one answer for final question finished 051020
 Week one answers finished 300920
