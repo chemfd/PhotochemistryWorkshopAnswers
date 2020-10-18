@@ -80,7 +80,7 @@
 
 \title{Photochemistry and Photophysics Workshops}
 \author{Fiona Dickinson}
-\date{2020-10-15}
+\date{2020-10-18}
 
 \begin{document}
 \maketitle
@@ -797,22 +797,45 @@ So if the rate of internal conversion increases, then the quantum yields of both
 
 This question is here to show that internal conversion by coupling to the solvent works in much the same way as internal conversion within a molecule.
 
-Excited states of chromophores in the gas phase have a longer lifetime than any solution based systems.
+Excited states of chromophores in the gas phase usually have a longer lifetime than any solution based systems. When a chromophore is solvated there is coupling between the molecular orbitals of the chromophore and solvent and much the same rules apply as you would expect for intramolecular internal conversion.
+
+Consequenly you need a good overlap integral between the excited state of the chromophore and the ground state of the solvent. As before deuteration decreases the size of the vibrational steps and so although you may at first think that this should increase the rate of interal conversion it also reduces the overlap integral between these two states.
+
+Therefore it is likely that the excited state will be longer lived in deuterated solvent.
+
+This is in fact the case with a typical singlet oxygen lifetime of singlet oxygen in D\textsubscript{2}O to be around 52 µs.
 
 \hypertarget{sec:isotope}{%
 \section{Short conceptual question - Isotope effects on deactivation of an excited state}\label{sec:isotope}}
 
-The fluorescence quantum yield and singlet state lifetime of both proteated and deuterated pyrene are 0.90 and 450 ns respectively. Why does deuteration of the sample have no measureable affect on these values?
+\emph{The fluorescence quantum yield and singlet state lifetime of both proteated and deuterated pyrene are 0.90 and 450 ns respectively. Why does deuteration of the sample have no measureable affect on these values?}
 
-Conversely for naphthalene phosphorescence (in glass at 77 K) the quantum yield of phosphoresce increases from 0.05 to \textasciitilde0.80 on deuteration of the sample. (ΔE = 251 kJ mol\textsuperscript{−1} ). Explain this observation with respect to the energy gap law.
+\emph{Conversely for naphthalene phosphorescence (in glass at 77 K) the quantum yield of phosphoresce increases from 0.05 to \textasciitilde0.80 on deuteration of the sample. (ΔE = 251 kJ mol\textsuperscript{−1} ). Explain this observation with respect to the energy gap law.}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+For the fluorescene emission of pyrene we know that the quantum yield of fluorescence is given by equation \eqref{eq:QYfluor}
+
+\begin{equation}
+\phi_{f}^0 = \frac{k_{f}^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\label{eq:QYfluor}
+\end{equation}
+
+Changing the isotope of atoms used changes the reduced mass of the sample and consequently changes the spacing of the vibrational energy levels and the overlap integral of the HOMO and LUMO. This changes the rate of internal conversion.
+
+The fact that for pyrene there is no measurable difference between the proteated and deuterated samples has to be because internal conversion only plays a negligable role in deactivation of the excited state (otherwise there would be a difference).
+
+Given the structure of pyrene this makes a great deal of sense, as there are no intermolecular rotations, and few vibrations.
+
+For napthalene you would expect to see a slow rate of single to triplet intersystem crossing, because there is no available change of molecular orbital type (el Sayed's rule) and no `heavy' atoms to increase the spin orbit coupling.
+
+This would potentially explain the low quantum yield of proteated napthalene, however we know that the coupling between HOMO and LUMO for deuterated samples will almost certainly be lower. So in this case we likely have large rates of internal conversion for proteated samples and much smaller rates (as is typical) for the deuterated sample. This means the deuterated sample must loose the energy by other methods, and in the absence of emission from the singlet state intersystem crossing is favoured leaving an excited state triplet.
+
+To `prove' this theory experiments could be done looking at the relative production of triplet for the two isotopes (details of suitable experiments will be shared in CH30227).
 
 \hypertarget{sec:heavy}{%
 \section{Short conceptual question - The effect of heavy attoms on the rate of intersystem crossing}\label{sec:heavy}}
 
 \begin{longtable}[]{@{}llll@{}}
-\caption{\label{tab:heavyatom} The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.}\tabularnewline
+\caption{\label{tab:heavyatom} \emph{The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.}}\tabularnewline
 \toprule
 & k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f}\tabularnewline
 \midrule
@@ -829,15 +852,25 @@ Napthalene & 0.05 & 0.39 & 0.09\tabularnewline
 \bottomrule
 \end{longtable}
 
-Briefly explain why the rates of these processes increase as we move down the group.
+\emph{Briefly explain why the rates of these processes increase as we move down the group.}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+The inclusion of `heavy' atoms leads to an increase in coupling between spin of the electron and angular momentum of the orbital (spin-orbit coupling) (please note that normally when \emph{I} think of heavy atoms I'm thinking of things that have occupied \emph{d} orbitals).
+
+We can see for the hydrocarbon napthalene relatively low \(k_{ST}\) and \(k_{p}\) with similar values for the one fluorine substituted molecule. This would indicate that decay from the excited state is principally going to be from singlet pathways (fluorescence or internal conversion), or intersystem crossing from singlet to triplet and then radiationless decay of the triplet (so triplet to singlet intersystem crossing).
+
+Given the low ratio of \$\phi\_p/\phi\_f) considerably more fluorescence than phosphorescence is seen for these two molecules supporting this idea.
+
+As the substitutions become heavier, the rates of spin forbidden processes changes, and both intersystem crossing (from singlet to triplet and triplet to singlet) and phosphorescence become more allowed.
+
+This trend continues as we move from the `middleweight' chlorine substiuted molecule to the bromine and iodine subsitutions.
+
+Rates of internal conversion and fluorescence will have been attenuated by the substitutions (and the net effect on the energy levels), but the effect of spin orbit coupling is greater.
 
 \hypertarget{sec:osphen}{%
 \section{Short conceptual question - The effect of absorbance and emission wavelengths on the quantum yield of emission}\label{sec:osphen}}
 
 \begin{longtable}[]{@{}llllll@{}}
-\caption{\label{tab:osphen} The spectroscopic details of a family of osmium complexes.}\tabularnewline
+\caption{\label{tab:osphen} \emph{The spectroscopic details of a family of osmium complexes}}\tabularnewline
 \toprule
 & λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em}\tabularnewline
 \midrule
@@ -852,9 +885,11 @@ Briefly explain why the rates of these processes increase as we move down the gr
 \bottomrule
 \end{longtable}
 
-Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?
+\emph{Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?}
 
-\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+As the phenanthroline ligands are replaced by bis(diphenylphosphino)ethene (dppene) then the transitions move to higher energy and the energy gap between absorption and emission increases. As a consequence of this there is an increase in both the quantum yield of emssion and excited state lifetime.
+
+This will be due to the lowering of the overlap integral for vibrational decay between the HOMO and LUMO, as this is reduced the rate of internal conversion (or given the lifetimes here triplet to singlet intersystem crossing) will decrease and the quantum yield of emmission will increase as described in equation \eqref{eq:QYphos}.
 
   \bibliography{book.bib,packages.bib}
 

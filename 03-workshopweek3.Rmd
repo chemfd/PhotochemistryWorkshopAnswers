@@ -147,13 +147,19 @@ Changing the isotope of atoms used changes the reduced mass of the sample and co
 
 The fact that for pyrene there is no measurable difference between the proteated and deuterated samples has to be because internal conversion only plays a negligable role in deactivation of the excited state (otherwise there would be a difference).
 
-Given the structure of pyrene this makes a great deal of sense.
+Given the structure of pyrene this makes a great deal of sense, as there are no intermolecular rotations, and few vibrations.
+
+For napthalene you would expect to see a slow rate of single to triplet intersystem crossing, because there is no available change of molecular orbital type (el Sayed's rule) and no 'heavy' atoms to increase the spin orbit coupling. 
+
+This would potentially explain the low quantum yield of proteated napthalene, however we know that the coupling between HOMO and LUMO for deuterated samples will almost certainly be lower. So in this case we likely have large rates of internal conversion for proteated samples and much smaller rates (as is typical) for the deuterated sample. This means the deuterated sample must loose the energy by other methods, and in the absence of emission from the singlet state intersystem crossing is favoured leaving an excited state triplet.
+
+To 'prove' this theory experiments could be done looking at the relative production of triplet for the two isotopes (details of suitable experiments will be shared in CH30227).
 
 
 
 ## Short conceptual question - The effect of heavy attoms on the rate of intersystem crossing {#sec:heavy}
 
-Table: (\#tab:heavyatom) The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.
+Table: (\#tab:heavyatom) <span style="color: darkcyan;">*The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.*
 
 | | k~p~ | k~ST~ |  Φ~p~ / Φ ~f~ |
 |:--------------|:---------|:---------|:---------|
@@ -163,14 +169,26 @@ Table: (\#tab:heavyatom) The affect of substitution of different halogens on the
 | 1-bromonaphthalene | 13.5 | 36.5 | 169 |
 | 1-iodonaphthalene | 190 | 310 | >760 |
 
-Briefly explain why the rates of these processes increase as we move down the group. 
+<span style="color: darkcyan;">*Briefly explain why the rates of these processes increase as we move down the group.* 
 
-*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+The inclusion of 'heavy' atoms leads to an increase in coupling between spin of the electron and angular momentum of the orbital (spin-orbit coupling) (please note that normally when *I* think of heavy atoms I'm thinking of things that have occupied *d* orbitals).
+
+We can see for the hydrocarbon napthalene relatively low $k_{ST}$ and $k_{p}$ with similar values for the one fluorine substituted molecule. This would indicate that decay from the excited state is principally going to be from singlet pathways (fluorescence or internal conversion), or intersystem crossing from singlet to triplet and then radiationless decay of the triplet (so triplet to singlet intersystem crossing).
+
+Given the low ratio of $\phi_p/\phi_f) considerably more fluorescence than phosphorescence is seen for these two molecules supporting this idea.
+
+As the substitutions become heavier, the rates of spin forbidden processes changes, and both intersystem crossing (from singlet to triplet and triplet to singlet) and phosphorescence become more allowed.
+
+This trend continues as we move from the 'middleweight' chlorine substiuted molecule to the bromine and iodine subsitutions.
+
+Rates of internal conversion and fluorescence will have been attenuated by the substitutions (and the net effect on the energy levels), but the effect of spin orbit coupling is greater.
+
+
 
 
 ## Short conceptual question - The effect of absorbance and emission wavelengths on the quantum yield of emission {#sec:osphen}
 
-Table: (\#tab:osphen) The spectroscopic details of a family of osmium complexes.
+Table: (\#tab:osphen) <span style="color: darkcyan;">*The spectroscopic details of a family of osmium complexes*
 
 | | λ~abs~ / nm | λ~em~ / nm | ΔE / eV | τ/ ns | Φ~em~ |
 |:----------------|:----|:----|:----|:----|:----|
@@ -178,6 +196,8 @@ Table: (\#tab:osphen) The spectroscopic details of a family of osmium complexes.
 | [Os(phen)~2~(dppene)]^2+^ | 455 | 609 | 0.69 | 1830 | 0.138 |
 | [Os(phen)(dppene)~2~]^2+^ | 400 | 530 | 0.761 | 3600 | 0.518 |
 
-Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?
+<span style="color: darkcyan;">*Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?*
 
-*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+As the phenanthroline ligands are replaced by bis(diphenylphosphino)ethene (dppene) then the transitions move to higher energy and the energy gap between absorption and emission increases. As a consequence of this there is an increase in both the quantum yield of emssion and excited state lifetime.
+
+This will be due to the lowering of the overlap integral for vibrational decay between the HOMO and LUMO, as this is reduced the rate of internal conversion (or given the lifetimes here triplet to singlet intersystem crossing) will decrease and the quantum yield of emmission will increase as described in equation \@ref(eq:QYphos).
