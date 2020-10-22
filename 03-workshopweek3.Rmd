@@ -1,4 +1,4 @@
-# Workshop Questions for Week 3 {#ch:Workshop3}
+# Workshop Answers for Week 3 {#ch:Workshop3}
 
 ## Short conceptual question - Electronic-vibrational overlap integrals {#sec:overlap}
 

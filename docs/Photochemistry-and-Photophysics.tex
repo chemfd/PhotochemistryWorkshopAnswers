@@ -80,7 +80,7 @@
 
 \title{Photochemistry and Photophysics Workshops}
 \author{Fiona Dickinson}
-\date{2020-10-18}
+\date{2020-10-22}
 
 \begin{document}
 \maketitle
@@ -384,7 +384,7 @@ The natural lifetime is the lifetime when the only decay pathway is fluorescence
 \label{eq:natural}
 \end{equation}
 
-Combining equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}:
+Combining equations \eqref{eq:QYfluor} and \eqref{eq:lifetimefluor}:
 
 \begin{equation*}
 \frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
@@ -630,7 +630,7 @@ This would push the equilibrium to form the dye:DNA complex increasing binding, 
 This is a problem solving question and any reasonable attempt would have been given credit. It is demonstrating an ability to think about data and the problem in a scientific manner.
 
 \hypertarget{ch:Workshop3}{%
-\chapter{Workshop Questions for Week 3}\label{ch:Workshop3}}
+\chapter{Workshop Answers for Week 3}\label{ch:Workshop3}}
 
 \hypertarget{sec:overlap}{%
 \section{Short conceptual question - Electronic-vibrational overlap integrals}\label{sec:overlap}}
@@ -890,6 +890,225 @@ Rates of internal conversion and fluorescence will have been attenuated by the s
 As the phenanthroline ligands are replaced by bis(diphenylphosphino)ethene (dppene) then the transitions move to higher energy and the energy gap between absorption and emission increases. As a consequence of this there is an increase in both the quantum yield of emssion and excited state lifetime.
 
 This will be due to the lowering of the overlap integral for vibrational decay between the HOMO and LUMO, as this is reduced the rate of internal conversion (or given the lifetimes here triplet to singlet intersystem crossing) will decrease and the quantum yield of emmission will increase as described in equation \eqref{eq:QYphos}.
+
+\hypertarget{ch:Workshop4}{%
+\chapter{Workshop Answers for Week 4}\label{ch:Workshop4}}
+
+\hypertarget{sec:diffcontrol}{%
+\section{Short mathematical question - Determining rates of diffusion controlled quenching}\label{sec:diffcontrol}}
+
+\emph{The rate of diffusion (\(k_d\)) in solution is given by equation \eqref{eq:diffcontrolrate}, where \(\eta\) is the viscosity of the solution.}
+
+\begin{equation}
+k_d = \frac{8RT}{3 \eta}
+\label{eq:diffcontrolrate}
+\end{equation}
+
+\emph{Determine the maximum possible rate of diffusion controlled quenching at 20 ºC in:}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \emph{water (\(\eta=\) 1.0016 mPa s)}
+\item
+  \emph{methanol (\(\eta=\) 0.594 mPa s)}
+\end{enumerate}
+
+Nominally this is simple but it needs some careful unit conversion, in water:
+
+\begin{equation*}
+k_d = \frac{8 \times 8.31447 \textrm { J K$^{-1}$ mol$^{-1}$} \times 293 \textrm{ K}}{3 \times 1.0016 \times 10^{-3} \textrm{ Pa s}}
+\end{equation*}
+
+\begin{equation*}
+k_d = \frac{8 \times 8.31447 \textrm { kg m$^2$ s$^{-2}$ K$^{-1}$ mol$^{-1}$} \times 293 \textrm{ K}}{3 \times 1.0016 \times 10^{-3} \textrm{ kg m$^{-1}$ s$^{-2}$ s}}
+\end{equation*}
+
+\(k_d= 6.49 \times 10^6\) mol\(^{-1}\) m\(^3\) s\(^{-1}\)
+
+\(k_d= 6.49 \times 10^9\) mol\(^{-1}\) dm\(^3\) s\(^{-1}\)
+
+in methanol \(k_d= 1.09 \times 10^{10}\) mol\(^{-1}\) dm\(^3\) s\(^{-1}\)
+
+\hypertarget{sec:emintquench}{%
+\section{Short mathematical question - Determining the effect of diffusion controlled quenching on emission intensity}\label{sec:emintquench}}
+
+\emph{What emisison intensity would you expect if 50 mM of a quencher quenches the emission of a chromophore dissolved in basic ethanol at 10 ºC, with natural lifetime of 13.2 ns and emission quantum yield, Φ\textsubscript{f}, of 0.32, if the unqunched intensity is 35240.}
+
+\emph{\(\eta_ \textrm{EtOH, 10 ºC}\) = 1.394 mPa s}
+
+Combining equations \eqref{eq:QYfluor} and \eqref{eq:lifetimefluor}, we get equation \eqref{eq:natural}, see Section \ref{sec:YieldLifetime}.
+
+This means we can rearrange to give:
+
+\begin{equation*}
+\tau = \tau^0 \phi_f = 13.2 \textrm{ ns} \times 0.32
+\end{equation*}
+
+\(\tau_{unquenched}\) = 4.2 ns (note this will be refered to as \(\tau_0\) from this point on).
+
+From equation \eqref{eq:diffcontrolrate} in section \ref{sec:diffcontrol} we can determine \(k_d = 4.50 \times 10^9\) mol\(^{-1}\) dm\(^3\) s\(^{-1}\).
+
+The Stern-Volmer equation \eqref{eq:sternvolmer} shows how the concentration of a quencher affects the intensity, lifetime or quantum yield:
+
+\begin{equation}
+\frac{\tau_0}{\tau}=\frac{\phi_0}{\phi}=\frac{I_0}{I}=1+ k_q \tau_0
+\label{eq:sternvolmer}
+\end{equation}
+
+Rearranging
+
+\begin{equation*}
+I = \frac{I_0}{1 + k_q \tau_0 [Q]}= \frac{3520}{1+0.945}
+\end{equation*}
+
+I = 18k
+
+\hypertarget{sec:temp}{%
+\section{Short conceptual question - effect of temperature}\label{sec:temp}}
+
+\emph{YO-Pro-1 is quenched in the presence of molecular oxygen, as the temperature increases this quenching increases, what does this indicate about the mechanism of quenchign and why?}
+
+This would indicate dynamic quenching, the rate of diffusion control is proporitional to temperature, equation \eqref{eq:diffcontrolrate} in section \ref{sec:diffcontrol}, the higher the rate the more collisional deactivation. A static quenching is an equilibrium complex and the weak intermolecular bonding is broken as temperature increases and so static quenching decreases with increasing temperature.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/quenchintensityconc} 
+
+}
+
+\caption{The effect of temperature on dynamic (right) and static (left) quenching.}\label{fig:quenchingtemp}
+\end{figure}
+
+\hypertarget{sec:static}{%
+\section{Short conceptual question - static quenching}\label{sec:static}}
+
+\emph{When in the presence of a quencher the intensity of emission of a chromophore (τ\textsubscript{0} = 5.2 ns) was reduced from 4200 cps to 2100 cps at 25 ºC and 1800 cps at 10 ºC. What would the lifetime of the quenched chromophore be at 25 ºC?}
+
+Ok - more than a hint in the question title, but why?
+
+Here as the temperature is decreased the amount of quenching increases, this indicates formation of a non-emissive static complex held togehter by a weak intermoleular bond. (Figure \ref{fig:quenchingtemp}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/staticquenching} 
+
+}
+
+\caption{The effect of temperature on dynamic (right) and static (left) quenching.}\label{fig:staticquench}
+\end{figure}
+
+Since the fluorophore now exists in one of two states (the unquenched free choromophore and the non-emissive bound chromophore) any fluorescence observed is unquenched and so the measured lifetime remains the same.
+
+\hypertarget{sec:static2}{%
+\section{Short conceptual question - static quenching}\label{sec:static2}}
+
+\emph{10-methylacridinium chloride (MAC) is quenced in the presence of adenosine monophosphate (AMP, figure (\ref{fig:AMP})). The effect of quenching is enhanced by addition of sodium sulfate.}
+
+\emph{In a separate experiment the emssion of MAC is unaffected by addition of sodium sulfate (when not in the presence of AMP).}
+
+\emph{Suggest the mechanism of quenching, justifying this with reference to the experimental data.}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/MAC} 
+
+}
+
+\caption{The structure of methyl acridinium.}\label{fig:MAC}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/AMP} 
+
+}
+
+\caption{The structure of adenosine monophosphate.}\label{fig:AMP}
+\end{figure}
+
+Again I give away the mechanism in the question title, but why is it static?
+
+The principle reason is the sodium sulfate, it is clearly not quenching as there is no effect when it is added to the MAC solution, and there is no reason it should affect the rate of diffusion when combined with AMP.
+
+Therefore we are left to conclude it is static quenching, but what is the role of the sulfate. This goes back to the non-ideality of ionic solutions, and the addition of a salt is almost certainly providing an ionic atmosphere that is helping to move the equilibrium to the complex, by making this state more stable.
+
+Having a constant ionic strength is vitally important in experiments (not just electrochemistry), and the role of the KNO\textsubscript{2} in Question \ref{sec:acridone} is just there to ensure the ionic strength of the system remains constant.
+
+\hypertarget{sec:acridone}{%
+\section{Long mathematical question - Quenching of emission of acridone}\label{sec:acridone}}
+
+\emph{Acridone (figure \ref{fig:acridone})is found to be quenched in the presence of potassium iodide in aqueous solution at 26 oC. Solutions were maintained at constant ionic strength by use of KNO2, the KNO2 does not affect the emission intensity of the solution.}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/acridone} 
+
+}
+
+\caption{The structure of acridone.}\label{fig:acridone}
+\end{figure}
+
+\emph{The following data were collected for the emission of acridone.}
+
+\begin{longtable}[]{@{}cccc@{}}
+\caption{\label{tab:acridonequench} \emph{The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.}}\tabularnewline
+\toprule
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+\midrule
+\endhead
+0 & 1.100 & 16580 & 17.60\tabularnewline
+0.040 & 1.060 & 3753 & 3.90\tabularnewline
+0.100 & 1.000 & 1566 & 1.80\tabularnewline
+0.200 & 0.900 & 721 & 0.95\tabularnewline
+0.300 & 0.800 & 446 & 0.64\tabularnewline
+0.500 & 0.600 & 242 & 0.39\tabularnewline
+0.800 & 0.300 & 121 & 0.25\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{Using an appropriate plot (or plots) determine if the quenching is static, dynamic or a combination of both mechanisms.}
+\item
+  \emph{Determine any relevant quenching constants (k\textsubscript{d} and/or K\textsubscript{S} )}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/acridonequenchI0I} 
+
+}
+
+\caption{The ratio of emisison intensity  relative to the unquenched intensity plotted as a function of temperature with a (clearly bad) linear fit.}\label{fig:acridoneI0I}
+\end{figure}
+
+Since the plot of \(\frac{I_0}{I}\) vs {[}Q{]} is non linear this would likely indicate that quenching is a combination of both static and dynamic quenching.
+
+\begin{equation*}
+\frac{I_0}{I}=(1 + K_s [Q])(1 + k_q \tau _0 [Q])
+\end{equation*}
+
+Given we have lifetime data we can easily determine the dynamic rate constant by plotting \(\frac{\tau_0}{\tau}\) vs {[}Q{]} (Equation \eqref{eq:sternvolmer}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/acridonequench} 
+
+}
+
+\caption{The graph allows determination of both quenching constants}\label{fig:acridonequench}
+\end{figure}
+
+From this K\textsubscript{S} = 1.19 and k\textsubscript{q} = 4.94 × 10\textsuperscript{9} M\textsuperscript{-1} s\textsuperscript{-1}
+
+I solved this in python and the notebook is available on request.
 
   \bibliography{book.bib,packages.bib}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  18 OCT 2020 22:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  22 OCT 2020 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,28 +1304,62 @@ Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-No file Photochemistry-and-Photophysics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 896.
 [34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 896.
+Chapter 4.
+[35
+
+] [36]
+File: images/quenchintensityconc.png Graphic file (type QTm)
+<use  "images/quenchintensityconc.png" >
+Missing character: There is no τ in font [lmroman10-italic]:mapping=tex-text;!
+File: images/staticquenching.png Graphic file (type QTm)
+<use  "images/staticquenching.png" > [37]
+File: images/MAC.png Graphic file (type QTm)
+<use  "images/MAC.png" >
+File: images/AMP.png Graphic file (type QTm)
+<use  "images/AMP.png" > [38]
+File: images/acridone.png Graphic file (type QTm)
+<use  "images/acridone.png" >
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+File: images/acridonequenchI0I.png Graphic file (type QTm)
+<use  "images/acridonequenchI0I.png" >
+Overfull \hbox (72.71234pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.6.  LONG MATHEMATICAL QUESTION - QUENCHING OF EMISSION OF ACR
+IDONE \TU/lmr/m/n/10 39
+ []
+
+[39] [40]
+File: images/acridonequench.png Graphic file (type QTm)
+<use  "images/acridonequench.png" >
+No file Photochemistry-and-Photophysics.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1115.
+
+Overfull \hbox (72.71234pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 4.6.  LONG MATHEMATICAL QUESTION - QUENCHING OF EMISSION OF ACR
+IDONE \TU/lmr/m/n/10 41
+ []
+
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1115.
 (./Photochemistry-and-Photophysics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 896.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 896.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1115.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1115.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 896.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1115.
  ) 
 Here is how much of TeX's memory you used:
- 24824 strings out of 493005
- 443206 string characters out of 6134596
- 643469 words of memory out of 5000000
- 28510 multiletter control sequences out of 15000+600000
- 9977 words of font info for 67 fonts, out of 8000000 for 9000
+ 24928 strings out of 493005
+ 446143 string characters out of 6134596
+ 645098 words of memory out of 5000000
+ 28594 multiletter control sequences out of 15000+600000
+ 13853 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,7n,120p,10426b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Photochemistry-and-Photophysics.pdf (34 pages).
+Output written on Photochemistry-and-Photophysics.pdf (41 pages).

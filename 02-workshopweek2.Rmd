@@ -22,7 +22,7 @@ The natural lifetime is the lifetime when the only decay pathway is fluorescence
 (\#eq:natural)
 \end{equation}
 
-Combining equations  \@ref(eq:lifetimefluor) and \@ref(eq:lifetimefluor):
+Combining equations  \@ref(eq:QYfluor) and \@ref(eq:lifetimefluor):
 
 \begin{equation*}
 \frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
