@@ -1,0 +1,58 @@
+# Workshop Questions for Week 6 {#ch:Workshop6}
+
+## Short conceptual question - change in behaviour on freezing
+
+<span style="color: darkcyan;"> As the concentration of a species increases the wavelength of emission increases in the solution phase but this same shift in wavelength is not when the solution is frozen. What photochemical process may be occuring to explain this effect?
+
+This will be due to excimer emission. An excimer relies on diffusion for an excited state chromophore to migrate to meet a ground state chromophore and form the excimer, if no diffusion can occur no excimers can form.
+
+This is supported by the increase in emission wavelength for the solution phase, excimer emission is always at lower energy (longer wavelength) than the corresponding monomer emission.
+
+## Short conceptual question - effect of polar solvents on emission
+
+<span style="color: darkcyan;">Solutions containing anthracence and diethylaniline are shown to have broad emission at around 450 nm in toluene, but in dichloromethane no emission is observed.
+
+<span style="color: darkcyan;">The emission from athracene has λ~max~ of 375 nm.
+
+<span style="color: darkcyan;">Suggest the processes going on which account for these observations.
+
+The principle difference betewen these two solvents is polarity, therefore the polarity of the solvent is affecting the ability of a species to emit. Also there are two species in solution.
+
+Consquently, emission is likely from an exciplex, which is non-emissive in the polar solvent as a stable radical ion pair is formed instead.
+
+## Short conceptual question - isoemissive point  
+
+<span style="color: darkcyan;">As the concentration of pyrene dissolved in toluene increases a new broad band with a broad featureless spectrum is observed, which is from excimer emisison. What evidence is there that emission is only from single molecule and excimer emission and no other states?
+
+<span style="color: darkcyan;">How would the absorption spectrum change as the concentration increases?
+
+```{r echo=FALSE, pyrene, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The emission spectrum of pyrene in tolune as low (solid line) and higher (dotted lines) concentrations.'}
+knitr::include_graphics("images/pyrene.png")
+```
+
+The  broad Gaussian emission only occurs at higher concentrations, between the featureless broad shape and its concentration depenedence this supports excimer emission, as does only a single species in solution.
+
+Since only monomers exist in the ground state the absorption spectrum shouldn't change.
+
+## Short conceptual question - redox chemistry
+
+<span style="color: darkcyan;">Why does formation of an excited state decrease both the oxidation and reduction potential of a species?
+
+
+
+## Short conceptual question - effect of time delay
+
+If a solution of pyrene in cyclohexane is excited with a very short (ps) pulse of lightafter 1 ns the emission spectrum observed is mainly that of the momomer, whereas after 100 ns emission is principally from the excimer. Why is this the case?
+
+## Short conceptual question - lifetimes
+
+The emission spectra of 2-phenylindole shows a marked difference with changes in concentration. 
+
+At a concentration of 1 × 10^−5^ M the measured lifetime is 0.86 ns, whereas at 5 × 10^−3^ M the measured lifetime is 3.42 ns.
+
+
+```{r echo=FALSE, phenylindole, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The emission spectrum of pyrene in tolune as low (solid line) and higher (dotted lines) concentrations.'}
+knitr::include_graphics("images/phenylindole.png")
+```
+
+Why does the measured lifetime depend upon concentration?
