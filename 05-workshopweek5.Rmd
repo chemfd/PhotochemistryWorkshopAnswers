@@ -58,8 +58,8 @@ k_{ET}=\frac{1}{\tau_D}\frac{R_0^6}{r^6}
 \end{equation}
 
 \begin{equation*}
-k_{ET}=\frac{1}{5.0 \textrm{ ns}}\ frac{50^6}{38^6} = 7.6 \times 10^8 \textrm{ s}^{-1}
-
+k_{ET}=\frac{1}{5.0 \textrm{ ns}}\frac{50^6}{38^6} = 7.6 \times 10^8 \textrm{ s}^{-1}
+\end{equation*}
 
 ## Short conceptual quesiton - Förster distance {#sec:FRETdist}
 
